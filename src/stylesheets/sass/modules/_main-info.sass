@@ -1,0 +1,31 @@
+.main-info
+	width: 400px
+	height: 240px
+	position: absolute
+	bottom: 450px
+	left: 0
+	h1
+		font: 300 45px/48px $raleway
+		color: $fontColor
+		text-transform: uppercase
+	p
+		font: 400 15px/23px $oSans
+		color: $fontColor
+	.lines
+		display: block
+		width: 18px
+		position: relative
+		float: left
+		li
+			display: block
+			border-top: 2px solid $fontColor
+			width: 100%
+			opacity: .4
+			margin-top: 30px
+			&:first-child
+				opacity: 1
+			&:last-child
+				opacity: .2
+				position: absolute
+				margin: 0
+				top: -165px

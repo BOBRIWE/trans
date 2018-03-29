@@ -1,0 +1,68 @@
+.form
+	height: 716px
+	&-articles
+		height: 459px
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			height: inherit
+			width: 50vw
+			top: 0
+			background: $orange
+			left: $maxWidth
+		.article
+			background: $orange
+			padding: 70px 30px
+			p
+				font: 400 14px/24px $oSans
+				color: $fontColor !important
+				margin-right: 30px
+				margin-left: 30px
+	&-content
+		height: 257px
+		background: #323339
+		padding-left: 60px
+		padding-top: 60px
+		box-sizing: border-box
+		&:after
+			content: ''
+			display: block
+			position: absolute
+			height: inherit
+			width: 50vw
+			bottom: 0
+			background: #323339
+			left: $maxWidth
+		h2
+			font: 300 35px/39px $raleway
+			color: $fontColor
+			text-transform: uppercase
+			margin-bottom: 35px
+		input
+			padding-left: 20px
+			box-sizing: border-box
+			border: 0
+			border-radius: 2px
+			background: $fontColor
+			font: 400 12px/23px $montserrat
+			color: $pColor
+			height: 60px
+			margin-right: 8px
+			&[type="text"],
+			&[type="tel"]
+				width: 194px
+			&[type="email"]
+				width: 294px
+			&[type="submit"]
+				width: 156px
+				text-align: center
+				padding-left: 0
+				background: transparent
+				color: $fontColor
+				border: 2px solid $fontColor
+				transition: .3s
+				&:hover
+					background: $orange
+			&:focus
+				outline: none

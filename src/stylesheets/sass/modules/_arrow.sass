@@ -1,0 +1,26 @@
+.arrow
+	$arrowW: 50px
+	list-style: none
+	&-circle
+		margin: 5px
+		span
+			border: 2px solid $fontColor
+	li
+		display: inline-block
+		border-radius: 50%
+		&.is-colored span
+			border-color: $orange
+			color: $orange
+		&.is-rotated
+			transform: rotate(90deg)
+		&.is-margin-left
+			margin-left: 50px
+		span
+			color: $fontColor
+			vertical-align: middle
+			text-align: center
+			display: table-cell
+			border-radius: 50%
+			width: $arrowW
+			height: $arrowW
+			font-size: 25px
